@@ -10,17 +10,17 @@ const productRouter = require("./Routes/productRoutes.js");
 const quoteRouter = require("./Routes/quoteRoutes.js");
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/test_mongoose');
+// mongoose.connect('mongodb://localhost:27017/test_mongoose');
 const username = "user_11";
 const password = "Iamabadboy1";
 const cluster = "cluster0";
 const dbname = "myFirstDatabase";
-// mongoose.connect(
-//     `mongodb+srv://${username}:${password}@${cluster}.66meu.mongodb.net/${dbname}?retryWrites=true&w=majority`, {
-//         useNewUrlParser: true,
-//         useUnifiedTopology: true
-//     }
-// );
+mongoose.connect(
+    `mongodb+srv://${username}:${password}@${cluster}.66meu.mongodb.net/${dbname}?retryWrites=true&w=majority`, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    }
+);
 
 
 
