@@ -2,9 +2,10 @@
   "name": "24_may",
   "version": "1.0.0",
   "description": "1st Express project",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "node test.js"
   },
   "author": "Soumojit",
   "license": "ISC",
